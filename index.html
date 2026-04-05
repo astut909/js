@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice Song Starter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Voice Song Starter</h1>
+      <p id="status" class="status">Status: Idle</p>
+
+      <button id="listenBtn" type="button">Start Listening</button>
+
+      <section class="result" aria-live="polite">
+        <h2>Detected Song</h2>
+        <p><strong>Title:</strong> <span id="songTitle">-</span></p>
+        <p><strong>Artist:</strong> <span id="songArtist">-</span></p>
+      </section>
+
+      <audio id="player" controls></audio>
+
+      <p class="hint">Tip: set <code>AUDD_API_TOKEN</code> in your terminal before starting the server.</p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
